@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ciber es una página sobre consejos de ciberseguridad">
     <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/slider.css">
     <title>Ciber</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="/">Logo</a>
+                <a href="/">Ciber</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="#">Inicio</a></li>
@@ -24,8 +26,41 @@
         </nav>
     </header>
     <main class="main-content">
-        <section class="container">
-            <h2>Contenido Principal</h2>
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slide slideAnimation">
+                    <img src="./src/images/cibersec-1.webp" alt="Imagen ciberseguridad1">
+                    <div class="slide-content">
+                        <h2>Actualiza tus Dispositivos</h2>
+                        <p>Mantén tu software y sistemas siempre actualizados</p>  
+                    </div>
+                </div>
+                <div class="slide slideAnimation">
+                    <img src="./src/images/cibersec-2.webp" alt="Imagen ciberseguridad2">
+                    <div class="slide-content">
+                        <h2>Protege tus Contraseñas</h2>
+                        <p>Usa contraseñas fuertes y diferentes para cada cuenta</p>
+                    </div>
+                </div>
+                <div class="slide slideAnimation">
+                    <img src="./src/images/cibersec-3.webp" alt="Imagen ciberseguridad3">
+                    <div class="slide-content">
+                        <h2>Cuidado con el Phishing</h2>
+                        <p>Aprende a identificar correos y mensajes sospechosos</p>               
+                    </div>
+                </div>
+                
+                <!-- Botones de navegación -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                
+                <!-- Indicadores -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
