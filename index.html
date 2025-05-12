@@ -6,6 +6,7 @@
     <meta name="description" content="Ciber es una página sobre consejos de ciberseguridad">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="./src/styles/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Ciber</title>
 </head>
 <body>
@@ -15,7 +16,8 @@
                 <a href="/">Ciber</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-item-active"><a href="index.html">Inicio</a></li>
+                <li><a href="./src/pages/about-us.html">Sobre nosotros</a></li>
                 <li><a href="./src/pages/contact.html">Contacto</a></li>
             </ul>
             <div class="hamburger">
@@ -62,9 +64,26 @@
                 </div>
             </div>
         </section>
+
+        <section class="nav-cards">
+            <a href="./src/pages/news.html" class="nav-card">
+                <i class="fas fa-newspaper"></i>
+                <h2>Noticias</h2>
+                <p>Mantente informado sobre las últimas novedades en ciberseguridad y tecnología.</p>
+            </a>
+            <a href="./src/pages/about-us.html" class="nav-card">
+                <i class="fas fa-users"></i>
+                <h2>Sobre Nosotros</h2>
+                <p>Conoce más sobre nuestro equipo y nuestra misión en el mundo de la ciberseguridad.</p>
+            </a>
+            <a href="./src/pages/contact.html" class="nav-card">
+                <i class="fas fa-envelope"></i>
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna pregunta? No dudes en contactarnos, estamos aquí para ayudarte.</p>
+            </a>
+        </section>
     </main>
     <footer class="footer">
-
         <div class="footer-bottom">
             <p>&copy; 2025 Ciber. Todos los derechos reservados.</p>
         </div>
