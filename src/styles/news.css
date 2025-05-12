@@ -1,0 +1,120 @@
+/* Contenedor principal de las noticias en formato grid */
+.page-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 32px;
+    color: #ffffff;
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 32px;
+}
+
+/* Tarjeta individual de noticia */
+.news-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen de la noticia */
+.news-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.news-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Badge de la noticia */
+.news-category {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    align-self: flex-start;
+}
+
+
+.news-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+    min-height: 61px;
+    line-height: 1.2;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.news-date {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 16px;
+    min-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+
+.news-summary {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    min-height: 77px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-top: auto;
+    font-size: 16px;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+
+@media (max-width: 900px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}
