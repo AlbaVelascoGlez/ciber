@@ -12,9 +12,14 @@ body {
     flex-direction: column;
 }
 
+.main-content {
+    background-color: #01043f;
+
+}
+
 /* Estilos de la navegación */
 .navbar {
-    background-color: #333;
+    background-color: #000000;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -53,17 +58,66 @@ body {
     background-color: white;
 }
 
+.nav-item-active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: white;
+}
+
 /* Estilos del contenido principal */
 .main-content {
     flex: 1;
 }
 
+/* Tarjetas */
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 64px 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-card i {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #17275f;
+}
+
+.nav-card h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #17275f;
+}
+
+.nav-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
 /*  */
 
 
 /* Estilos del footer */
 .footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 2rem 0;
 }
@@ -114,4 +168,10 @@ body {
         padding: 8px;
         font-size: 14px;
     }
+
+    .nav-cards {
+        grid-template-columns: 1fr;
+        padding: 32px 16px;
+    }
 }
+
