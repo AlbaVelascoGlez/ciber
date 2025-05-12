@@ -1,0 +1,28 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "title": "Aumento de ataques de phishing en 2024",
+            "date": "2024-03-15",
+            "image": "https://www.cableworld.es/wp-content/uploads/2023/01/phising.png",
+            "description": "Los ataques de phishing han aumentado un 40% en el primer trimestre de 2024, según los últimos informes de seguridad.",
+            "category": "Seguridad"
+        },
+        {
+            "id": 2,
+            "title": "Nuevas vulnerabilidades en Windows 11",
+            "date": "2024-03-14",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGoOF0JtlUdYg-k3bkM5KGfoodkdTdk1LDDA&s",
+            "description": "Microsoft ha identificado y parcheado varias vulnerabilidades críticas en Windows 11 que podrían permitir la ejecución remota de código.",
+            "category": "Sistemas Operativos"
+        },
+        {
+            "id": 3,
+            "title": "Avances en Inteligencia Artificial",
+            "date": "2024-03-13",
+            "image": "https://www.infobae.com/new-resizer/mVrEOjJpOx58UuYlwLKlP724sAI=/arc-anglerfish-arc2-prod-infobae/public/P3NTZEC4S5ATFKILVOKYTZBHWY.jpg",
+            "description": "Las nuevas tecnologías de IA están revolucionando la forma en que detectamos y prevenimos amenazas cibernéticas.",
+            "category": "Tecnología"
+        }
+    ]
+} 
